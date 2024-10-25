@@ -1,0 +1,10 @@
+{
+    "name": "factorio",
+    "dependencies": {
+        "clipboardy": "^4.0.0",
+        "factorio-blueprint": "^2.6.5",
+        "jimp": "^1.6.0",
+        "svg-parser": "^2.0.4",
+        "yocto-spinner": "^0.1.1"
+    }
+}
