@@ -53,7 +53,7 @@ const filled = (x, y, img) => {
     if (pixel) {
         const { r, g, b, a } = intToRGBA(pixel);
 
-        if (r !== 0 && g !== 0 && b !== 0 && a === 255) {
+        if (r !== 0 && g !== 0 && b !== 0 && a > 100) {
             return true;
         }
     }
@@ -111,7 +111,7 @@ const main = async ({ file }) => {
             if (pixel) {
                 const { r, g, b, a } = intToRGBA(pixel);
 
-                if (r !== 0 && g !== 0 && b !== 0 && a === 255) {
+                if (r !== 0 && g !== 0 && b !== 0 && a > 100) {
                     const key = toKey([r, g, b]);
                     let entity = ColorToEntity[key];
 
